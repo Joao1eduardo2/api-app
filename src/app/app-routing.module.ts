@@ -13,7 +13,12 @@ const routes: Routes = [
   {
     path: 'cadastro-produto',
     loadChildren: () => import('./cadastro-produto/cadastro-produto.module').then( m => m.CadastroProdutoPageModule)
+  },
+  {
+    path: 'alterar-usuario/:id',
+    loadChildren: () => import('./alterar-usuario/alterar-usuario.module').then( m => m.AlterarUsuarioPageModule)
   }
+
 
 ];
 @NgModule({
