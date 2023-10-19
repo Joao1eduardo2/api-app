@@ -46,4 +46,8 @@ export class Tab1Page implements OnInit{
     this.buscarUsuarios();
   }
 
+  ionViewWillEnter()
+{
+  this.buscarUsuarios();
+}
 }
